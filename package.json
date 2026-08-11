@@ -1,0 +1,28 @@
+{
+  "name": "trabajo-practico",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "ej1": "node ejersicio1.ts",
+    "ej2": "node ejersicio2.ts",
+    "ej3": "node ejersicio3.ts",
+    "ej4": "node ejersicio4.ts",
+    "ej5": "node ejersicio5.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/landerklang/Actividad-practica-Typescript-Short-Lautaro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/landerklang/Actividad-practica-Typescript-Short-Lautaro/issues"
+  },
+  "homepage": "https://github.com/landerklang/Actividad-practica-Typescript-Short-Lautaro#readme",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
