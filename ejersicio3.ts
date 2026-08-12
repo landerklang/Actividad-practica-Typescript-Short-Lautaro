@@ -10,7 +10,9 @@ class Empleado {
   }
   describir(): string {
     const sueldo = this.calcularSueldo();
-    return `${this.nombre}(${this.antiguedad} años) - sueldo:$${sueldo}`;
+    return `nombre: ${this.nombre}
+  años: ${this.antiguedad} 
+  sueldo:$${sueldo}`;
   }
 }
 class EmpleadoFijo extends Empleado {
