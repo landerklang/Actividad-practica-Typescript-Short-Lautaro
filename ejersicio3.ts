@@ -5,12 +5,12 @@ class Empleado {
     this.nombre = nombre;
     this.antiguedad = antiguedad;
   }
-  calcularSueldo(sueldoBase: number): number {
+  calcularSueldo(): number {
     return 0;
   }
   describir(): string {
-    return `nombre: ${this.nombre},y lleva ${this.antiguedad} 
-    años trabajando`;
+    const sueldo = this.calcularSueldo();
+    return `${this.nombre}(${this.antiguedad} años) - sueldo:$${sueldo}`;
   }
 }
 class EmpleadoFijo extends Empleado {
@@ -20,13 +20,12 @@ class EmpleadoFijo extends Empleado {
     super(nombre, antiguedad);
     this.sueldoBase = sueldoBase;
   }
-  calcularSueldo(sueldoBase: number): number {
+  calcularSueldo(): number {
     let bono = this.antiguedad * 0.02;
-    let sueldototal = sueldoBase + sueldoBase * bono;
-    return (this.sueldoBase = sueldototal);
+    let sueldototal = this.sueldoBase + this.sueldoBase * bono;
+    return this.sueldoBase + sueldototal * bono;
   }
 }
 const empleado = new EmpleadoFijo("leandro", 5, 1000);
-console.log();
 console.log(empleado.describir());
-console.log(empleado.calcularSueldo(1000));
+console.log(empleado.calcularSueldo());
